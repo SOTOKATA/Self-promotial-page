@@ -1,6 +1,6 @@
 
     <!doctype html>
-<html lang="en" data-theme="studio-day">
+<html lang="uk" data-theme="studio-day">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,17 +8,35 @@
             (() => {
                 const lightTheme = "studio-day";
                 const darkTheme = "violet";
+                const themeCookieName = "theme";
                 const media = window.matchMedia("(prefers-color-scheme: dark)");
+                const getCookie = (name) => document.cookie
+                    .split("; ")
+                    .find((part) => part.startsWith(name + "="))
+                    ?.split("=")
+                    .slice(1)
+                    .join("=");
+                const getCookieTheme = () => {
+                    const theme = getCookie(themeCookieName);
+                    return theme === lightTheme || theme === darkTheme
+                        ? theme
+                        : undefined;
+                };
                 const applyTheme = () => {
-                    document.documentElement.dataset.theme = media.matches ? darkTheme : lightTheme;
+                    document.documentElement.dataset.theme = getCookieTheme() ?? (media.matches ? darkTheme : lightTheme);
                 };
 
                 applyTheme();
-                media.addEventListener?.("change", applyTheme) ?? media.addListener(applyTheme);
+                const handleSystemThemeChange = () => {
+                    if (!getCookieTheme())
+                        applyTheme();
+                };
+                media.addEventListener?.("change", handleSystemThemeChange) ?? media.addListener(handleSystemThemeChange);
             })();
         </script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Arial&family=Arial&display=swap" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?display=swap&family=Montserrat%3Aital%2Cwght%400%2C100..900%3B1%2C100..900&family=Ubuntu%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B0%2C700%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C700" rel="stylesheet" />
         %sveltekit.head%
     </head>
     <body>

@@ -4,10 +4,10 @@
 @plugin "daisyui" { themes: all; }
 
 * {
-    font-family: Arial, Arial, system-ui;
+    font-family: Montserrat, Arial, system-ui;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, Arial, system-ui;
+    font-family: Ubuntu, Arial, system-ui;
 }
 
 @plugin "daisyui/theme" {

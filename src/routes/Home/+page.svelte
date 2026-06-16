@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { _ } from "svelte-i18n";
     
     
     
@@ -16,9 +17,9 @@
     <div class="absolute inset-0 bg-gradient-to-br from-black/60 to-black/42"></div>
     <div class="relative z-10 mx-auto max-w-3xl py-20 text-center text-white">
         <span class="inline-block rounded-full bg-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-white">New</span>
-        <h1 class="mx-auto mt-3 max-w-3xl text-4xl font-bold leading-tight">Build pages faster</h1>
+        <h1 class="mx-auto mt-3 max-w-3xl text-4xl font-bold leading-tight">{$_("pages.home.blocks.herocover_4450cc65-0b3e-464c-b3b3-cdf40f19c2df.title")}</h1>
         <p class="mx-auto mt-4 max-w-2xl opacity-80">Compose sections with reusable blocks and ship in minutes.</p>
-        <div class="mt-6 flex flex-wrap justify-center gap-3"><a class="btn btn-primary" href="About Us">About us</a><a class="btn btn-outline" href="https://hours-watcher.vercel.app/private/dashboard">Hours Watcher</a></div>
+        <div class="mt-6 flex flex-wrap justify-center gap-3"><a class="btn btn-primary" href="About Us">Про нас</a><a class="btn btn-outline" href="https://hours-watcher.vercel.app/private/dashboard">Рахувальник часів</a></div>
     </div>
 </section>
 <!-- statsPanel -->
@@ -26,14 +27,14 @@
 <section class="p-6">
     
     <div class="mb-6 flex h-full flex-row items-center gap-3 sm:flex-wrap">
-        <h3 class="text-xl font-semibold">My statistic.ql</h3>
+        <h3 class="text-xl font-semibold">{$_("pages.home.blocks.statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423.title")}</h3>
         <p class="opacity-75">Description about represented numbers</p>
     </div>
     <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
         
         <div class="rounded-xl bg-base-200/60 p-4">
             <div class="text-2xl font-bold">12k+</div>
-            <div class="mt-1 text-sm opacity-70">Active users</div>
+            <div class="mt-1 text-sm opacity-70">{$_("pages.home.blocks.statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423.items.0.label")}</div>
         </div>
         <div class="rounded-xl bg-base-200/60 p-4">
             <div class="text-2xl font-bold">98%</div>
