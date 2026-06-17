@@ -13,7 +13,7 @@
     <title>Home</title>            
 </svelte:head>
 <!-- heroCover -->
-<section class="relative w-full overflow-hidden flex items-center justify-center min-h-screen" >
+<section class="relative w-full overflow-hidden flex items-center justify-center min-h-screen" style="background-image:url('/site-assets/52-pole_pshenitsa_derevia_976131_3840x2160.jpg');background-size:cover;background-position:center;">
     <div class="absolute inset-0 bg-gradient-to-br from-black/60 to-black/42"></div>
     <div class="relative z-10 mx-auto max-w-3xl py-20 text-center text-white">
         <span class="inline-block rounded-full bg-white/15 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-white">{$_("submit")}</span>
@@ -23,7 +23,7 @@
     </div>
 </section>
 <!-- statsPanel -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="p-6">
     
     <div class="mb-6 flex h-full flex-row items-center gap-3 sm:flex-wrap">
@@ -47,7 +47,7 @@
     </div>
 </section></div>
 <!-- galleryMedia -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Gallery & Media</h3>
     <p class="mt-2 opacity-75">Showcase images, media highlights and moments from your work.</p>
@@ -55,7 +55,7 @@
         
             <figure class="overflow-hidden rounded-xl border border-base-300 bg-base-100">
                 <div class="h-40 bg-base-200">
-                    <img class=" object-cover w-full h-full " src="/images/" alt="/images/" />
+                    <img class=" object-cover w-full h-full " src="/site-assets/57-peyzazh-peyzazhi-priroda-pole.jpg" alt="/site-assets/57-peyzazh-peyzazhi-priroda-pole.jpg" />
                 </div>
                
                 
@@ -67,7 +67,7 @@
         
             <figure class="overflow-hidden rounded-xl border border-base-300 bg-base-100">
                 <div class="h-40 bg-base-200">
-                    <img class=" object-cover w-full h-full " src="/images/" alt="/images/" />
+                    <img class=" object-cover w-full h-full " src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" />
                 </div>
                
                 
@@ -79,7 +79,7 @@
         
             <figure class="overflow-hidden rounded-xl border border-base-300 bg-base-100">
                 <div class="h-40 bg-base-200">
-                    <img class=" object-cover w-full h-full " src="/images/" alt="/images/" />
+                    <img class=" object-cover w-full h-full " src="/site-assets/47-46725-prodovolstvennoe_zerno-nebo-pole-zakat-semeystvo_travy-192.jpg" alt="/site-assets/47-46725-prodovolstvennoe_zerno-nebo-pole-zakat-semeystvo_travy-192.jpg" />
                 </div>
                
                 
@@ -92,7 +92,7 @@
     </div>
 </section></div>
 <!-- aboutUs -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl bg-base-100 p-6">
     <div class="grid gap-6 md:grid-cols-2">
         <div>

@@ -23,7 +23,7 @@
     </div>
 </section>
 <!-- aboutUs -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl bg-base-100 p-6">
     <div class="grid gap-6 md:grid-cols-2">
         <div>

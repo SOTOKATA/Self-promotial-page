@@ -24,7 +24,7 @@
     <title>test</title>            
 </svelte:head>
 <!-- contactForm -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Contact us</h3>
     <p class="mt-2 opacity-75">Tell us about your project and we will get back shortly.</p>
@@ -42,7 +42,7 @@
     </form>
 </section></div>
 <!-- contactForm -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="grid gap-6 md:grid-cols-2">
         <div>
@@ -65,7 +65,7 @@
     </div>
 </section></div>
 <!-- contactForm -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <h3 class="text-center text-2xl font-bold">Contact us</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">Tell us about your project and we will get back shortly.</p>
@@ -87,7 +87,7 @@
     </form>
 </section></div>
 <!-- newsletter -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6 text-center">
     <h3 class="text-2xl font-bold">Newsletter</h3>
     <p class="mx-auto mt-2 max-w-2xl opacity-75">Get updates, product notes and practical ideas every week.</p>
@@ -97,7 +97,7 @@
     </div>
 </section></div>
 <!-- newsletter -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="grid items-center gap-5 md:grid-cols-2">
         <div>
@@ -111,7 +111,7 @@
     </div>
 </section></div>
 <!-- newsletter -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <div>
@@ -125,7 +125,7 @@
     </div>
 </section></div>
 <!-- login -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <div class="mx-auto w-full max-w-md rounded-2xl border border-base-300 bg-base-100 p-5">
         <h3 class="text-2xl font-bold">Login</h3>
@@ -150,7 +150,7 @@
     </div>
 </section></div>
 <!-- login -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="grid items-center gap-5 md:grid-cols-2">
         <div>
@@ -176,7 +176,7 @@
     </div>
 </section></div>
 <!-- login -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <div class="mx-auto w-full max-w-lg rounded-xl bg-base-100 p-5 shadow-sm">
         <h3 class="text-center text-2xl font-bold">Login</h3>
@@ -195,7 +195,7 @@
     </div>
 </section></div>
 <!-- register -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <div class="mx-auto w-full max-w-lg rounded-2xl border border-base-300 bg-base-100 p-5">
         <h3 class="text-2xl font-bold">Register</h3>
@@ -218,7 +218,7 @@
     </div>
 </section></div>
 <!-- register -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="grid gap-5 md:grid-cols-2">
         <div>
@@ -244,7 +244,7 @@
     </div>
 </section></div>
 <!-- register -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <div class="mx-auto w-full max-w-xl rounded-xl bg-base-100 p-5 shadow-sm">
         <h3 class="text-center text-2xl font-bold">Register</h3>
@@ -267,7 +267,7 @@
     </div>
 </section></div>
 <!-- hero -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-8 text-center">
     <span class="badge badge-primary">New</span>
     <h1 class="mx-auto mt-3 max-w-3xl text-4xl font-bold">Build pages faster</h1>
@@ -275,7 +275,7 @@
     <div class="mt-6 flex flex-wrap justify-center gap-3"><a class="btn btn-primary" href="#">Get started</a><a class="btn btn-outline" href="#">See demo</a></div>
 </section></div>
 <!-- hero -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-gradient-to-br from-base-100 to-base-200 p-8">
     <div class="grid items-center gap-6 md:grid-cols-2">
         <div>
@@ -288,7 +288,7 @@
     </div>
 </section></div>
 <!-- hero -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/30 bg-primary/10 p-8">
     <div class="mx-auto max-w-4xl text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] opacity-60">New</p>
@@ -330,7 +330,7 @@
     </div>
 </section>
 <!-- feature -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <div class="grid gap-6 md:grid-cols-2">
         <div>
@@ -367,7 +367,7 @@
     </div>
 </section></div>
 <!-- feature -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-center text-3xl font-bold">Features</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">Everything you need to ship modern pages.</p>
@@ -400,7 +400,7 @@
     </div>
 </section></div>
 <!-- feature -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-3xl font-bold">Features</h3>
     <p class="mt-2 opacity-75">Everything you need to ship modern pages.</p>
@@ -433,7 +433,7 @@
     </div>
 </section></div>
 <!-- pricing -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <h3 class="text-3xl font-bold">Pricing</h3>
         <p class="mt-2 opacity-75">Pick a plan that matches your stage.</p><div class="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
 
@@ -466,7 +466,7 @@
 
 </div></div>
 <!-- pricing -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <h3 class="text-3xl font-bold">Pricing</h3>
         <p class="mt-2 opacity-75">Pick a plan that matches your stage.</p><div class="mt-6 grid gap-4 md:grid-cols-2">
     
@@ -500,7 +500,7 @@
     </article>
 </div>
 <!-- pricing -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <h3 class="text-3xl font-bold">Pricing</h3>
         <p class="mt-2 opacity-75">Pick a plan that matches your stage.</p><div class="mt-6 overflow-x-auto">
     <table class="table">
@@ -535,7 +535,7 @@
     </table>
 </div></div>
 <!-- ctaBanner -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/30 bg-primary/10 p-6 md:p-8 ">
     <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
         <div class="max-w-2xl">
@@ -546,7 +546,7 @@
     </div>
 </section></div>
 <!-- howItWorks -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">How it works</h3>
     <p class="mt-2 opacity-75">A clear path from setup to delivery in a few steps.</p>
@@ -573,7 +573,7 @@
     </div>
 </section></div>
 <!-- howItWorks -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <h3 class="text-2xl font-bold">How it works</h3>
     <p class="mt-2 opacity-75">A clear path from setup to delivery in a few steps.</p>
@@ -609,7 +609,7 @@
     </ul>
 </section></div>
 <!-- howItWorks -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <h3 class="text-center text-2xl font-bold">How it works</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">A clear path from setup to delivery in a few steps.</p>
@@ -642,7 +642,7 @@
     </div>
 </section></div>
 <!-- testimonial -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl "><section class="rounded-2xl p-6">
+<div class=" mx-auto  container   max-w-5xl "><section class="rounded-2xl p-6">
     <h3 class="text-3xl font-bold">Testimonial</h3>
     <p class="mt-2 opacity-75">About Testimonial</p>
     <div class="mt-6 grid gap-4 sm:grid-cols-3">
@@ -683,7 +683,7 @@
     </div>
 </section></div>
 <!-- testimonial -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl "><section class="rounded-2xl p-6">
+<div class=" mx-auto  container   max-w-5xl "><section class="rounded-2xl p-6">
     
     <div class="mb-6 flex items-end justify-between gap-4">
         <h3 class="text-3xl font-bold">Testimonial</h3>
@@ -730,7 +730,7 @@
     </div>
 </section></div>
 <!-- testimonial -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl "><section class="rounded-2xl p-6 text-center">
+<div class=" mx-auto  container   max-w-5xl "><section class="rounded-2xl p-6 text-center">
     <h3 class="text-3xl font-bold">Testimonial</h3>
     <p class="mx-auto mt-2 max-w-2xl opacity-75">About Testimonial</p>
     <div class="mt-6 grid gap-4 sm:grid-cols-3">
@@ -774,7 +774,7 @@
     </div>
 </section></div>
 <!-- statsPanel -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="p-6">
     
     <div class="mb-6 flex h-full flex-row items-center gap-3 sm:flex-wrap">
@@ -798,7 +798,7 @@
     </div>
 </section></div>
 <!-- statsPanel -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="p-6">
     <div class="grid gap-6 md:grid-cols-2">
         <div>
@@ -823,7 +823,7 @@
     </div>
 </section></div>
 <!-- statsPanel -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="p-6">
     <h3 class="text-center text-3xl font-bold">Site statistic</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">Description about represented numbers</p>
@@ -844,7 +844,7 @@
     </div>
 </section></div>
 <!-- logosPartners -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Logos & Partners</h3>
     <p class="mt-2 opacity-75">Teams and partners that build with our platform.</p>
@@ -853,7 +853,7 @@
     </div>
 </section></div>
 <!-- logosPartners -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="flex flex-wrap items-end justify-between gap-3">
         <div>
@@ -867,7 +867,7 @@
     </div>
 </section></div>
 <!-- logosPartners -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/20 bg-primary/5 p-6">
     <h3 class="text-center text-2xl font-bold">Logos & Partners</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">Teams and partners that build with our platform.</p>
@@ -906,7 +906,7 @@
     </div>
 </section></div>
 <!-- awardsBadges -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-warning/30 bg-warning/10 p-6">
     <h3 class="text-2xl font-bold">Awards & Badges</h3>
     <p class="mt-2 opacity-75">Recognition from industry programs and partner networks.</p>
@@ -943,7 +943,7 @@
     </ul>
 </section></div>
 <!-- awardsBadges -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <h3 class="text-2xl font-bold">Awards & Badges</h3>
     <p class="mt-2 opacity-70">Recognition from industry programs and partner networks.</p>
@@ -976,7 +976,7 @@
     </div>
 </section></div>
 <!-- awardsBadges -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Awards & Badges</h3>
     <p class="mt-2 opacity-75">Recognition from industry programs and partner networks.</p>
@@ -985,7 +985,7 @@
     </div>
 </section></div>
 <!-- faq -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <h3 class="text-center text-2xl font-bold">Frequently asked questions</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">Answers to the most common questions before getting started.</p>
@@ -1019,7 +1019,7 @@
     </ul>
 </section></div>
 <!-- faq -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <h3 class="text-2xl font-bold">Frequently asked questions</h3>
     <p class="mt-2 opacity-75">Answers to the most common questions before getting started.</p>
@@ -1053,7 +1053,7 @@
     </div>
 </section></div>
 <!-- faq -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Frequently asked questions</h3>
     <p class="mt-2 opacity-75">Answers to the most common questions before getting started.</p>
@@ -1107,7 +1107,7 @@
     </div>
 </section></div>
 <!-- galleryMedia -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-center text-2xl font-bold">Gallery & Media</h3>
     <p class="mx-auto mt-2 max-w-2xl text-center opacity-75">Showcase images, media highlights and moments from your work.</p>
@@ -1158,7 +1158,7 @@
     </div>
 </section></div>
 <!-- galleryMedia -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="flex items-end justify-between gap-2">
         <div>
@@ -1340,7 +1340,7 @@
     </div>
 </section></div>
 <!-- galleryMedia -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Gallery & Media</h3>
     <p class="mt-2 opacity-75">Showcase images, media highlights and moments from your work.</p>
@@ -1421,7 +1421,7 @@
     </div>
 </section></div>
 <!-- singleVideo -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6 bg-base-200">
     <div class="flex flex-col gap-6 lg:flex-row-reverse lg:items-center">
         <div class="flex-1 lg:pl-6">
@@ -1437,7 +1437,7 @@
     </div>
 </section></div>
 <!-- singleVideo -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <div class="text-center md:mx-auto md:w-3/4 lg:w-2/3">
         <h3 class="text-3xl font-bold">Video Spotlight</h3>
@@ -1451,7 +1451,7 @@
     </div>
 </section></div>
 <!-- singleVideo -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <div class="flex flex-col gap-6 md:flex-row md:items-center">
         <div class="flex-1">
@@ -1467,7 +1467,7 @@
     </div>
 </section></div>
 <!-- careers -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-primary/25 bg-primary/5 p-6">
     <div class="rounded-xl bg-base-100 p-5 shadow-sm">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] opacity-50">Open roles</p>
@@ -1507,7 +1507,7 @@
     </div>
 </section></div>
 <!-- careers -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl border border-base-300 bg-base-100 p-6">
     <h3 class="text-2xl font-bold">Careers</h3>
     <p class="mt-2 opacity-75">Join the team and build products used by modern teams.</p>
@@ -1544,7 +1544,7 @@
     </div>
 </section></div>
 <!-- careers -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl p-6">
     <h3 class="text-2xl font-bold">Careers</h3>
     <p class="mt-2 opacity-75">Join the team and build products used by modern teams.</p>
@@ -1585,7 +1585,7 @@
     </div>
 </section></div>
 <!-- aboutUs -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl bg-base-100 p-6">
     <div class="grid gap-6 md:grid-cols-3">
         <div class="md:col-span-2">
@@ -1606,7 +1606,7 @@
     </div>
 </section></div>
 <!-- aboutUs -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl bg-base-100 p-6 text-center">
     <p class="text-xs font-semibold uppercase tracking-[0.2em] opacity-60">Our story</p>
     <h3 class="mt-2 text-3xl font-bold">About us</h3>
@@ -1626,7 +1626,7 @@
     </div>
 </section></div>
 <!-- aboutUs -->
-<div class="mb-1"></div><div class=" mx-auto  container   max-w-5xl ">
+<div class=" mx-auto  container   max-w-5xl ">
 <section class="rounded-2xl bg-base-100 p-6">
     <div class="grid gap-6 md:grid-cols-2">
         <div>

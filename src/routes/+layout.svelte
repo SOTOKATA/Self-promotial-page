@@ -66,7 +66,7 @@
     </svelte:head>
     
     <!-- Navigation bar -->
-    <header class="sticky top-0 z-50 px-4 py-3 w-full">
+    <header class="sticky top-0 z-50 px-4 w-full">
   <nav class="mx-auto max-w-7xl flex items-center justify-between gap-4 rounded-full border border-base-content/10 bg-base-100/85 px-3 py-2 shadow-sm shadow-base-content/5 backdrop-blur-xl">
     <a href="/" class="flex min-w-0 items-center gap-2 rounded-full px-2 text-sm font-black tracking-tight text-base-content">
       <span class="flex h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="" class="h-full w-full object-cover"></span>
@@ -146,13 +146,14 @@
     {#if showCookieBanner}
         <!-- Cookie banner -->
         <div class="fixed inset-x-0 bottom-0 z-50">
-<section class="p-4">
-    <div class="alert shadow-lg">
+<section class="border-y border-base-300 bg-base-100 p-4">
+    <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <div>
-            <span class="font-semibold">Cookie banner: We use cookies to improve experience, analytics and performance.</span>
+            <p class="font-semibold">Cookie banner</p>
+            <p class="text-sm opacity-70">We use cookies to improve experience, analytics and performance.</p>
         </div>
-        <div class="flex gap-2">
-            <button type="button" class="btn btn-xs btn-outline" onclick={rejectCookies}>Manage</button><button type="button" class="btn btn-xs" onclick={rejectCookies}>Reject</button><button type="button" class="btn btn-xs btn-primary" onclick={acceptCookies}>Accept all</button>
+        <div class="flex flex-wrap gap-2">
+            <button type="button" class="btn btn-sm btn-outline" onclick={rejectCookies}>Manage</button><button type="button" class="btn btn-sm" onclick={rejectCookies}>Reject</button><button type="button" class="btn btn-sm btn-primary" onclick={acceptCookies}>Accept all</button>
         </div>
     </div>
 </section></div>
