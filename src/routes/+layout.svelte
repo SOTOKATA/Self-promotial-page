@@ -7,9 +7,11 @@
         import {
             applyLanguage,
             applyTheme,
+            getCookieConsent,
             getLanguageName,
             resolveInitialLanguage,
             resolveInitialTheme,
+            setCookieConsent,
             setLanguagePreference,
             setThemePreference,
             settings,
@@ -26,6 +28,8 @@
 
         settings.theme = resolveInitialTheme(data.theme);
         settings.language = resolveInitialLanguage(data.locale);
+        let cookieConsent = $state(data.cookieConsent ?? getCookieConsent());
+        let showCookieBanner = $derived(cookieConsent === undefined);
 
         function toggleTheme() {
             setThemePreference(settings.theme === themes[0] ? themes[1] : themes[0]);
@@ -34,6 +38,18 @@
         function setLanguage(language: string) {
             setLanguagePreference(language);
             setAppLocale(language);
+        }
+
+        function acceptCookies() {
+            setCookieConsent("accepted");
+            setThemePreference(settings.theme);
+            setLanguagePreference(settings.language);
+            cookieConsent = "accepted";
+        }
+
+        function rejectCookies() {
+            setCookieConsent("rejected");
+            cookieConsent = "rejected";
         }
 
         $effect(() => {
@@ -45,6 +61,7 @@
     </script>
     
     <svelte:head>
+        <link rel="icon" href="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" />
         <title>Self promotial page</title>
     </svelte:head>
     
@@ -52,7 +69,7 @@
     <header class="sticky top-0 z-50 px-4 py-3 w-full">
   <nav class="mx-auto max-w-7xl flex items-center justify-between gap-4 rounded-full border border-base-content/10 bg-base-100/85 px-3 py-2 shadow-sm shadow-base-content/5 backdrop-blur-xl">
     <a href="/" class="flex min-w-0 items-center gap-2 rounded-full px-2 text-sm font-black tracking-tight text-base-content">
-      
+      <span class="flex h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="" class="h-full w-full object-cover"></span>
       <span class="truncate">Self promotial page</span>
     </a>
     <ul class="menu menu-horizontal hidden min-w-0 flex-nowrap rounded-full bg-base-200/70 px-1 py-0.5 md:flex [&>li>a]:rounded-full [&>li>a]:px-3 [&>li>a]:py-1.5 [&>li>a]:text-sm [&>li>a]:font-medium [&>li>a]:text-base-content/60 [&>li>a:hover]:bg-base-100 [&>li>a:hover]:text-base-content">
@@ -89,9 +106,9 @@
     </svg>
   </button>
   <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 mt-1 w-max min-w-full max-w-[calc(100vw-2rem)] p-2 shadow-sm">
-    <li><button type="button" class="whitespace-nowrap" onclick={() => setLanguage("uk")}>Ukrainian</button></li>
-    <li><button type="button" class="whitespace-nowrap" onclick={() => setLanguage("en")}>English</button></li>
-    <li><button type="button" class="whitespace-nowrap" onclick={() => setLanguage("pt")}>Portuguese</button></li>
+    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("en")}>English</button></li>
+    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("pt")}>Portuguese</button></li>
+    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("uk")}>Ukrainian</button></li>
   </ul>
 </div>
         <a class="btn btn-primary btn-sm rounded-full px-5 whitespace-nowrap" href="/Home">Home</a>
@@ -110,7 +127,7 @@
     <footer class=" border-t border-base-content/10 bg-base-100 px-5 py-8 text-base-content">
   <div class="w-full flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
     <div class="flex min-w-0 items-center gap-3">
-      
+      <span class="flex h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="" class="h-full w-full object-cover"></span>
       <div class="min-w-0">
         <p class="truncate text-base font-black tracking-tight">Self promotial page</p>
         <p class="text-sm text-base-content/60">Copyright &copy; 2026 - All rights reserved by Self promotial page</p>
@@ -125,4 +142,19 @@
     </div>
   </div>
 </footer>
+
+    {#if showCookieBanner}
+        <!-- Cookie banner -->
+        <div class="fixed inset-x-0 bottom-0 z-50">
+<section class="p-4">
+    <div class="alert shadow-lg">
+        <div>
+            <span class="font-semibold">Cookie banner: We use cookies to improve experience, analytics and performance.</span>
+        </div>
+        <div class="flex gap-2">
+            <button type="button" class="btn btn-xs btn-outline" onclick={rejectCookies}>Manage</button><button type="button" class="btn btn-xs" onclick={rejectCookies}>Reject</button><button type="button" class="btn btn-xs btn-primary" onclick={acceptCookies}>Accept all</button>
+        </div>
+    </div>
+</section></div>
+    {/if}
     

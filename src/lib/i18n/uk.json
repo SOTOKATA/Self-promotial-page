@@ -1,11 +1,11 @@
 {
-  "submit": "Прийняти",
-  "enter": "Увійти",
+  "submit": "Підтвердити",
   "pages": {
     "home": {
       "blocks": {
         "herocover_4450cc65-0b3e-464c-b3b3-cdf40f19c2df": {
-          "title": "Робіть сторінки швидко"
+          "title": "Створюй сторінки швидко",
+          "description": "Привіт"
         },
         "statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423": {
           "title": "Статистика",
@@ -14,18 +14,6 @@
               "label": "Активних користувачів"
             }
           }
-        }
-      }
-    },
-    "test": {
-      "blocks": {
-        "login_844c66e4-377d-4807-b872-9f63ca2952ea": {
-          "title": "Логін",
-          "description": "Увійдіть у робочу область і продовжуйте редагування.",
-          "emailLabel": "Пошта",
-          "passwordLabel": "Пароль",
-          "rememberText": "Запам'ятати мене",
-          "forgotText": "Забули пароль?"
         }
       }
     }

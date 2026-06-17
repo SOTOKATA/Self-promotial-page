@@ -1,14 +1,15 @@
 
     <!doctype html>
-<html lang="uk" data-theme="studio-day">
+<html lang="en" data-theme="paper-mint">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script>
             (() => {
-                const lightTheme = "studio-day";
-                const darkTheme = "violet";
+                const lightTheme = "paper-mint";
+                const darkTheme = "midnight-lime";
                 const themeCookieName = "theme";
+                const cookieConsentName = "cookie-consent";
                 const media = window.matchMedia("(prefers-color-scheme: dark)");
                 const getCookie = (name) => document.cookie
                     .split("; ")
@@ -16,7 +17,11 @@
                     ?.split("=")
                     .slice(1)
                     .join("=");
+                const canUsePreferenceCookies = () => getCookie(cookieConsentName) === "accepted";
                 const getCookieTheme = () => {
+                    if (!canUsePreferenceCookies())
+                        return undefined;
+
                     const theme = getCookie(themeCookieName);
                     return theme === lightTheme || theme === darkTheme
                         ? theme

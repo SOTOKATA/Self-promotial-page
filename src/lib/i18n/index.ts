@@ -1,13 +1,14 @@
 import { browser } from "$app/environment";
 import { init, locale as activeLocale, register } from "svelte-i18n";
 
-export const fallbackLocale = "uk";
-export const supportedLocales = ["uk","en","pt"];
+export const fallbackLocale = "en";
+export const supportedLocales = ["en","pt","uk"];
 export const localeCookieName = "locale";
+export const cookieConsentName = "cookie-consent";
 
-register("uk", () => import("./uk.json"));
 register("en", () => import("./en.json"));
 register("pt", () => import("./pt.json"));
+register("uk", () => import("./uk.json"));
 
 function getCookie(name: string) {
     if (!browser)
@@ -38,11 +39,15 @@ function setCookie(name: string, value: string) {
     document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${maxAge}; samesite=lax`;
 }
 
+function canStorePreferences() {
+    return getCookie(cookieConsentName) === "accepted";
+}
+
 function resolveInitialLocale(serverLocale: string = fallbackLocale) {
     if (!browser)
         return serverLocale;
 
-    const storedLocale = getCookie(localeCookieName);
+    const storedLocale = canStorePreferences() ? getCookie(localeCookieName) : undefined;
     if (storedLocale && supportedLocales.includes(storedLocale))
         return storedLocale;
 
@@ -63,7 +68,8 @@ export function setAppLocale(locale: string) {
 
     activeLocale.set(locale);
 
-    setCookie(localeCookieName, locale);
+    if (canStorePreferences())
+        setCookie(localeCookieName, locale);
 }
 
 export function initI18n(initialLocale: string = fallbackLocale) {

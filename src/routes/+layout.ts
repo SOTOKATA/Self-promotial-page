@@ -6,5 +6,5 @@ export const load: LayoutLoad = async ({ data }) => {
     await initI18n(data.locale);
     await waitLocale();
 
-    return { locale: data.locale, theme: data.theme };
+    return { locale: data.locale, theme: data.theme, cookieConsent: data.cookieConsent };
 };

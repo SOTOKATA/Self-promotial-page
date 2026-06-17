@@ -1,11 +1,11 @@
 {
   "submit": "Submit",
-  "enter": "Enter",
   "pages": {
     "home": {
       "blocks": {
         "herocover_4450cc65-0b3e-464c-b3b3-cdf40f19c2df": {
-          "title": "Build pages faster"
+          "title": "Build pages faster",
+          "description": "Compose sections with reusable blocks and ship in minutes."
         },
         "statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423": {
           "title": "Statistic",
@@ -14,18 +14,6 @@
               "label": "Active users"
             }
           }
-        }
-      }
-    },
-    "test": {
-      "blocks": {
-        "login_844c66e4-377d-4807-b872-9f63ca2952ea": {
-          "title": "Login",
-          "description": "Access your workspace and continue editing.",
-          "emailLabel": "Email",
-          "passwordLabel": "Password",
-          "rememberText": "Remember me",
-          "forgotText": "Forgot password?"
         }
       }
     }

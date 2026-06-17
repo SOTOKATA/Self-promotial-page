@@ -1,13 +1,15 @@
 import { browser } from "$app/environment";
 
-export const themes = ["studio-day","violet"] as const;
-export const languages = ["uk","en","pt"] as const;
-export const languageNames = {"uk":"українська","en":"англійська","pt":"португальська"} as const;
+export const themes = ["paper-mint","midnight-lime"] as const;
+export const languages = ["en","pt","uk"] as const;
+export const languageNames = {"en":"English","pt":"Portuguese","uk":"Ukrainian"} as const;
 export const themeCookieName = "theme";
 export const localeCookieName = "locale";
+export const cookieConsentName = "cookie-consent";
 
 export type Theme = typeof themes[number];
 export type Language = typeof languages[number];
+export type CookieConsent = "accepted" | "rejected";
 
 export const settings = $state<{
     theme: Theme;
@@ -46,6 +48,38 @@ function setCookie(name: string, value: string) {
     document.cookie = `${name}=${encodeURIComponent(value)}; path=/; max-age=${maxAge}; samesite=lax`;
 }
 
+function deleteCookie(name: string) {
+    if (!browser)
+        return;
+
+    document.cookie = `${name}=; path=/; max-age=0; samesite=lax`;
+}
+
+export function getCookieConsent(): CookieConsent | undefined {
+    const consent = getCookie(cookieConsentName);
+    return consent === "accepted" || consent === "rejected"
+        ? consent
+        : undefined;
+}
+
+export function canStorePreferences() {
+    return getCookieConsent() === "accepted";
+}
+
+export function setCookieConsent(consent: CookieConsent) {
+    setCookie(cookieConsentName, consent);
+
+    if (consent === "rejected") {
+        deleteCookie(themeCookieName);
+        deleteCookie(localeCookieName);
+    }
+}
+
+function setPreferenceCookie(name: string, value: string) {
+    if (canStorePreferences())
+        setCookie(name, value);
+}
+
 function isTheme(theme: unknown): theme is Theme {
     return typeof theme === "string" && themes.includes(theme as Theme);
 }
@@ -79,7 +113,7 @@ export function resolveInitialTheme(serverTheme?: string | null): Theme {
     if (isTheme(serverTheme))
         return serverTheme;
 
-    const cookieTheme = getCookie(themeCookieName);
+    const cookieTheme = canStorePreferences() ? getCookie(themeCookieName) : undefined;
     if (isTheme(cookieTheme))
         return cookieTheme;
 
@@ -87,7 +121,7 @@ export function resolveInitialTheme(serverTheme?: string | null): Theme {
 }
 
 export function resolveInitialLanguage(serverLanguage?: string | null): Language {
-    const cookieLanguage = getCookie(localeCookieName);
+    const cookieLanguage = canStorePreferences() ? getCookie(localeCookieName) : undefined;
     if (isLanguage(cookieLanguage))
         return cookieLanguage;
 
@@ -122,7 +156,7 @@ export function setThemePreference(theme: string) {
 
     settings.theme = theme;
     applyTheme(theme);
-    setCookie(themeCookieName, theme);
+    setPreferenceCookie(themeCookieName, theme);
 }
 
 export function setLanguagePreference(language: string) {
@@ -131,5 +165,5 @@ export function setLanguagePreference(language: string) {
 
     settings.language = language;
     applyLanguage(language);
-    setCookie(localeCookieName, language);
+    setPreferenceCookie(localeCookieName, language);
 }

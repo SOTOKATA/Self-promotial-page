@@ -1,20 +1,26 @@
 import type { LayoutServerLoad } from "./$types";
 
-const fallbackLocale = "uk";
-const supportedLocales = ["uk","en","pt"];
-const supportedThemes = ["studio-day","violet"];
+const fallbackLocale = "en";
+const supportedLocales = ["en","pt","uk"];
+const supportedThemes = ["paper-mint","midnight-lime"];
 const localeCookieName = "locale";
 const themeCookieName = "theme";
+const cookieConsentName = "cookie-consent";
 
 export const load: LayoutServerLoad = ({ cookies }) => {
-    const cookieLocale = cookies.get(localeCookieName);
+    const storedCookieConsent = cookies.get(cookieConsentName);
+    const cookieConsent = storedCookieConsent === "accepted" || storedCookieConsent === "rejected"
+        ? storedCookieConsent
+        : undefined;
+    const canUsePreferenceCookies = cookieConsent === "accepted";
+    const cookieLocale = canUsePreferenceCookies ? cookies.get(localeCookieName) : undefined;
     const locale = cookieLocale && supportedLocales.includes(cookieLocale)
         ? cookieLocale
         : fallbackLocale;
-    const cookieTheme = cookies.get(themeCookieName);
+    const cookieTheme = canUsePreferenceCookies ? cookies.get(themeCookieName) : undefined;
     const theme = cookieTheme && supportedThemes.includes(cookieTheme)
         ? cookieTheme
         : null;
 
-    return { locale, theme };
+    return { locale, theme, cookieConsent };
 };

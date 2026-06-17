@@ -13,7 +13,7 @@
     <title>About Us</title>            
 </svelte:head>
 <!-- heroCover -->
-<div class="mb-1"></div><section class="relative w-full overflow-hidden flex items-center justify-center min-h-screen" style="background-image:url('/site-assets/52-pole_pshenitsa_derevia_976131_3840x2160.jpg');background-size:cover;background-position:center;">
+<section class="relative w-full overflow-hidden flex items-center justify-center min-h-screen" style="background-image:url('/site-assets/52-pole_pshenitsa_derevia_976131_3840x2160.jpg');background-size:cover;background-position:center;">
     <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.72)_100%)]"></div>
     <div class="relative z-10 mx-auto max-w-2xl py-20 text-center text-white">
         
