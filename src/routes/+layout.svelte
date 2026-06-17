@@ -26,12 +26,20 @@
 
         let { data, children } = $props();
 
-        const heroCoverPagePaths = new Set(["/About Us","/Home"]);
-
         function normalizePath(pathname: string) {
-            const normalized = pathname.replace(/\/+$/, "");
+            let decoded = pathname;
+
+            try {
+                decoded = decodeURIComponent(pathname);
+            } catch {
+                decoded = pathname;
+            }
+
+            const normalized = decoded.replace(/\/+$/, "");
             return normalized || "/";
         }
+
+        const heroCoverPagePaths = new Set(["/About Us","/Home","/"].map(normalizePath));
 
         settings.theme = resolveInitialTheme(data.theme);
         settings.language = resolveInitialLanguage(data.locale);
@@ -39,7 +47,7 @@
         let showCookieBanner = $derived(cookieConsent === undefined);
         let navbarOverHero = $derived(heroCoverPagePaths.has(normalizePath(page.url.pathname)));
         let navbarPositionClass = $derived(navbarOverHero ? "fixed inset-x-0 top-0 z-50" : "sticky top-0 z-50");
-        let navbarSpacingClass = $derived(navbarOverHero ? "px-4 pt-3" : "px-4");
+        let navbarSpacingClass = "px-4 pt-3";
 
         function toggleTheme() {
             setThemePreference(settings.theme === themes[0] ? themes[1] : themes[0]);
