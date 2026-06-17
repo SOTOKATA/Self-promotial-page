@@ -159,7 +159,7 @@
             <div class="mt-4 text-sm opacity-65">Secure sign-in with your email and password.</div>
         </div>
         <form method="POST" action="?/login" use:enhance={handleEnhance()} class="space-y-3 rounded-xl border border-base-300 bg-base-50 p-4">
-            <input required required type="email" name="email" placeholder="Email" class="input input-bordered w-full" />
+            <input required type="email" name="email" placeholder="Email" class="input input-bordered w-full" />
             <input required type="password" name="password" placeholder="Password" class="input input-bordered w-full" />
             
             <label for="saveMe" class="label cursor-pointer justify-start gap-2">
