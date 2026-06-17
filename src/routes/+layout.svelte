@@ -38,7 +38,8 @@
         let cookieConsent = $state(data.cookieConsent ?? getCookieConsent());
         let showCookieBanner = $derived(cookieConsent === undefined);
         let navbarOverHero = $derived(heroCoverPagePaths.has(normalizePath(page.url.pathname)));
-        let navbarPositionClass = $derived(navbarOverHero ? "absolute inset-x-0 top-0 z-50" : "sticky top-0 z-50");
+        let navbarPositionClass = $derived(navbarOverHero ? "fixed inset-x-0 top-0 z-50" : "sticky top-0 z-50");
+        let navbarSpacingClass = $derived(navbarOverHero ? "px-4 pt-3" : "px-4");
 
         function toggleTheme() {
             setThemePreference(settings.theme === themes[0] ? themes[1] : themes[0]);
@@ -75,7 +76,7 @@
     </svelte:head>
     
     <!-- Navigation bar -->
-    <header class="{navbarPositionClass} px-4 w-full">
+    <header class="{navbarPositionClass} {navbarSpacingClass} w-full">
   <nav class="mx-auto max-w-7xl flex items-center justify-between gap-4 rounded-full border border-base-content/10 bg-base-100/85 px-3 py-2 shadow-sm shadow-base-content/5 backdrop-blur-xl">
     <a href="/" class="flex min-w-0 items-center gap-2 rounded-full px-2 text-sm font-black tracking-tight text-base-content">
       <span class="flex h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="" class="h-full w-full object-cover"></span>
