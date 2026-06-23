@@ -1,21 +1,3 @@
 {
-  "submit": "Підтвердити",
-  "pages": {
-    "home": {
-      "blocks": {
-        "herocover_4450cc65-0b3e-464c-b3b3-cdf40f19c2df": {
-          "title": "Створюй сторінки швидко",
-          "description": "Привіт"
-        },
-        "statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423": {
-          "title": "Статистика",
-          "items": {
-            "0": {
-              "label": "Активних користувачів"
-            }
-          }
-        }
-      }
-    }
-  }
+  "ewewe": ""
 }

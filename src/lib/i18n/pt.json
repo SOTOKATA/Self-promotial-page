@@ -1,21 +1,3 @@
 {
-  "submit": "Sim",
-  "pages": {
-    "home": {
-      "blocks": {
-        "herocover_4450cc65-0b3e-464c-b3b3-cdf40f19c2df": {
-          "title": "Cria páginas rapidamente",
-          "description": "Olá"
-        },
-        "statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423": {
-          "title": "Estatística",
-          "items": {
-            "0": {
-              "label": "Utilizadores online"
-            }
-          }
-        }
-      }
-    }
-  }
+  "ewewe": ""
 }

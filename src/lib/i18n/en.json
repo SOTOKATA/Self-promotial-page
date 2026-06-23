@@ -1,21 +1,3 @@
 {
-  "submit": "Submit",
-  "pages": {
-    "home": {
-      "blocks": {
-        "herocover_4450cc65-0b3e-464c-b3b3-cdf40f19c2df": {
-          "title": "Build pages faster",
-          "description": "Compose sections with reusable blocks and ship in minutes."
-        },
-        "statspanel_f8935912-dd91-4fd1-b69f-f6b6debf0423": {
-          "title": "Statistic",
-          "items": {
-            "0": {
-              "label": "Active users"
-            }
-          }
-        }
-      }
-    }
-  }
+  "ewewe": ""
 }

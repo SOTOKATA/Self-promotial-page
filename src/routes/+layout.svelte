@@ -39,7 +39,7 @@
             return normalized || "/";
         }
 
-        const heroCoverPagePaths = new Set(["/About Us","/Home","/"].map(normalizePath));
+        const heroCoverPagePaths = new Set(["/Home","/"].map(normalizePath));
 
         settings.theme = resolveInitialTheme(data.theme);
         settings.language = resolveInitialLanguage(data.locale);
@@ -79,23 +79,22 @@
     </script>
     
     <svelte:head>
-        <link rel="icon" href="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" />
-        <title>Self promotial page</title>
+        <link rel="icon" href="/site-assets/73-pshenitsa_kolosia_pole_176911_1920x1080.jpg" />
+        <title>SiteTest</title>
     </svelte:head>
     
     <!-- Navigation bar -->
-    <header class="{navbarPositionClass} {navbarSpacingClass} w-full">
-  <nav class="mx-auto max-w-7xl flex items-center justify-between gap-4 rounded-full border border-base-content/10 bg-base-100/85 px-3 py-2 shadow-sm shadow-base-content/5 backdrop-blur-xl">
-    <a href="/" class="flex min-w-0 items-center gap-2 rounded-full px-2 text-sm font-black tracking-tight text-base-content">
-      <span class="flex h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="" class="h-full w-full object-cover"></span>
-      <span class="truncate">Self promotial page</span>
+    <header class="{navbarPositionClass} w-full border-b border-base-content/10 bg-base-100/90 backdrop-blur-xl">
+  <nav class="mx-auto max-w-7xl flex h-16 items-center justify-between gap-5 px-4">
+    <a href="/" class="flex min-w-0 items-center gap-3 text-base font-black tracking-tight text-base-content">
+      <span class="flex h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/73-pshenitsa_kolosia_pole_176911_1920x1080.jpg" alt="" class="h-full w-full object-cover"></span>
+      <span class="truncate">SiteTest</span>
     </a>
-    <ul class="menu menu-horizontal hidden min-w-0 flex-nowrap rounded-full bg-base-200/70 px-1 py-0.5 md:flex [&>li>a]:rounded-full [&>li>a]:px-3 [&>li>a]:py-1.5 [&>li>a]:text-sm [&>li>a]:font-medium [&>li>a]:text-base-content/60 [&>li>a:hover]:bg-base-100 [&>li>a:hover]:text-base-content">
+    <ul class="menu menu-horizontal hidden flex-nowrap gap-1 rounded-2xl border border-base-content/10 bg-base-200/60 p-1 lg:flex [&>li>a]:rounded-xl [&>li>a]:px-3 [&>li>a]:py-1.5 [&>li>a]:text-sm [&>li>a]:font-semibold [&>li>a]:text-base-content/55 [&>li>a:hover]:bg-base-100 [&>li>a:hover]:text-base-content">
       
-    <li><a href="/About Us">About Us</a></li>
     </ul>
-    <div class="flex gap-3 items-center">
-        <button type="button" onclick={toggleTheme}
+    <div class="flex items-center justify-end gap-3">
+      <button type="button" onclick={toggleTheme}
     class="btn btn-ghost btn-sm btn-circle"
     aria-label="Toggle theme">
   {#if settings.theme === themes[0]}
@@ -124,12 +123,12 @@
     </svg>
   </button>
   <ul tabindex="-1" class="dropdown-content menu bg-base-100 rounded-box z-1 mt-1 w-max min-w-full max-w-[calc(100vw-2rem)] p-2 shadow-sm">
-    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("en")}>English</button></li>
-    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("pt")}>Portuguese</button></li>
-    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("uk")}>Ukrainian</button></li>
+    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("uk")}>українська</button></li>
+    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("pt")}>португальська</button></li>
+    <li><button type="button" class="capitalize whitespace-nowrap" onclick={() => setLanguage("en")}>англійська</button></li>
   </ul>
 </div>
-        <a class="btn btn-primary btn-sm rounded-full px-5 whitespace-nowrap" href="/Home">Home</a>
+      <a class="btn btn-sm btn-neutral rounded-xl px-5 whitespace-nowrap" href="/Home">Home</a>
     </div>
   </nav>
 </header>
@@ -142,19 +141,19 @@
     </FadeTransition>
     
     <!-- Footer -->
-    <footer class=" border-t border-base-content/10 bg-base-100 px-5 py-8 text-base-content">
-  <div class="w-full flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+    <footer class=" bg-neutral px-5 py-8 text-neutral-content">
+  <div class="mx-auto max-w-7xl grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
     <div class="flex min-w-0 items-center gap-3">
-      <span class="flex h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/56-pshenitsa_koloski_pole_144604_3840x2160.jpg" alt="" class="h-full w-full object-cover"></span>
+      <span class="flex h-10 w-10 shrink-0 overflow-hidden rounded-xl border border-base-content/10 bg-base-200"><img src="/site-assets/73-pshenitsa_kolosia_pole_176911_1920x1080.jpg" alt="" class="h-full w-full object-cover"></span>
       <div class="min-w-0">
-        <p class="truncate text-base font-black tracking-tight">Self promotial page</p>
-        <p class="text-sm text-base-content/60">Copyright &copy; 2026 - All rights reserved by Self promotial page</p>
+        <p class="truncate text-lg font-black tracking-tight">SiteTest</p>
+        <p class="text-sm text-neutral-content/65">Copyright &copy; 2026 - All rights reserved by SiteTest</p>
       </div>
     </div>
-    <div class="flex flex-col gap-3 md:items-end">
-      <nav class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm [&>a]:text-base-content/65 [&>a]:transition-colors [&>a:hover]:text-primary">
+    <div class="flex flex-col gap-4 md:items-end">
+      <nav class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm [&>a]:text-neutral-content/70 [&>a]:transition-colors [&>a:hover]:text-neutral-content">
     <a class="font-semibold text-base-content hover:text-primary" href="/Home">Home</a>
-    <a href="/About Us">About Us</a>
+    
   </nav>
       
     </div>

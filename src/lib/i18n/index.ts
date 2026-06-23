@@ -1,14 +1,14 @@
 import { browser } from "$app/environment";
 import { init, locale as activeLocale, register } from "svelte-i18n";
 
-export const fallbackLocale = "en";
-export const supportedLocales = ["en","pt","uk"];
+export const fallbackLocale = "uk";
+export const supportedLocales = ["uk","pt","en"];
 export const localeCookieName = "locale";
 export const cookieConsentName = "cookie-consent";
 
-register("en", () => import("./en.json"));
-register("pt", () => import("./pt.json"));
 register("uk", () => import("./uk.json"));
+register("pt", () => import("./pt.json"));
+register("en", () => import("./en.json"));
 
 function getCookie(name: string) {
     if (!browser)
