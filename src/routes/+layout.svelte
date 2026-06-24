@@ -39,7 +39,7 @@
             return normalized || "/";
         }
 
-        const heroCoverPagePaths = new Set(["/page","/"].map(normalizePath));
+        const heroCoverPagePaths = new Set(["/Home","/"].map(normalizePath));
 
         settings.theme = resolveInitialTheme(data.theme);
         settings.language = resolveInitialLanguage(data.locale);
@@ -98,7 +98,7 @@
     <div class="flex gap-3 items-center">
         
         
-        <a class="btn btn-primary btn-sm rounded-full px-5 whitespace-nowrap" href="/page">Home</a>
+        <a class="btn btn-primary btn-sm rounded-full px-5 whitespace-nowrap" href="/Home">Home</a>
     </div>
   </nav>
 </header>
@@ -122,7 +122,7 @@
     </div>
     <div class="flex flex-col gap-3 md:items-end">
       <nav class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm [&>a]:text-base-content/65 [&>a]:transition-colors [&>a:hover]:text-primary">
-    <a class="font-semibold text-base-content hover:text-primary" href="/page">Home</a>
+    <a class="font-semibold text-base-content hover:text-primary" href="/Home">Home</a>
     <a href="/About us">About us</a><a href="/Privacy Policy">Privacy Policy</a>
   </nav>
       
