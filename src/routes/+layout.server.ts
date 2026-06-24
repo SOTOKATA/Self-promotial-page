@@ -1,8 +1,8 @@
 import type { LayoutServerLoad } from "./$types";
 
-const fallbackLocale = "uk";
-const supportedLocales = ["uk","pt","en"];
-const supportedThemes = ["studio-day","violet"];
+const fallbackLocale = "en";
+const supportedLocales = ["en"];
+const supportedThemes = ["studio-day","dark-webcraft"];
 const localeCookieName = "locale";
 const themeCookieName = "theme";
 const cookieConsentName = "cookie-consent";

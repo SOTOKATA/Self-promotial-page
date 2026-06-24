@@ -1,8 +1,8 @@
 import { browser } from "$app/environment";
 
-export const themes = ["studio-day","violet"] as const;
-export const languages = ["uk","pt","en"] as const;
-export const languageNames = {"uk":"українська","pt":"португальська","en":"англійська"} as const;
+export const themes = ["studio-day","dark-webcraft"] as const;
+export const languages = ["en"] as const;
+export const languageNames = {"en":"English"} as const;
 export const themeCookieName = "theme";
 export const localeCookieName = "locale";
 export const cookieConsentName = "cookie-consent";
